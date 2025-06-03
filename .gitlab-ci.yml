@@ -1,3 +1,6 @@
 test:
   image: "ubuntu:24.04"
-  script: ./compile.sh
+  script: 
+    - apt update -qq
+    - apt install -y gcc
+    - ./compile.sh
