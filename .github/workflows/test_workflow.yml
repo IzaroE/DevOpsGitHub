@@ -1,0 +1,13 @@
+name: test_workflow😃
+on:
+  pull_request:
+  push:
+  schedule:
+    - cron:'0 0 * * 5'
+
+jobs:
+  build -job:
+    runs -on: ubuntu-latest
+    steps:
+      - users: actions/checkout@v4
+      - run: ./compile_with_docker.sh
