@@ -9,5 +9,5 @@ jobs:
   build-job:
     runs-on: ubuntu-latest
     steps:
-      - users: actions/checkout@v4
-      - run: ./compile_with_docker.sh
+      -users: actions/checkout@v4
+      -run: ./compile_with_docker.sh
