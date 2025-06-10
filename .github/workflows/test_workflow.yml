@@ -1,6 +1,6 @@
-name: test_workflow😃
+name: "test_workflow😃"
 on:
-  pull-request:
+  pull_request:
   push:
   schedule:
     - cron:'0 0 * * 5'
