@@ -6,8 +6,8 @@ on:
     - cron:'0 0 * * 5'
 
 jobs:
-  build -job:
-    runs -on: ubuntu-latest
+  build-job:
+    runs-on: ubuntu-latest
     steps:
       - users: actions/checkout@v4
       - run: ./compile_with_docker.sh
